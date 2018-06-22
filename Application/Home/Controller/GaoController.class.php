@@ -3,9 +3,9 @@
  * 高德云图数据接口
  * Date: 2018-06-22 09:01
  */
-namespace Home\Controller;
-use Think\Controller;
-class Gao
+namespace ice;
+
+class Gaodeyuntu
 {
     private static $key;
     private static $tableid;
@@ -14,10 +14,8 @@ class Gao
         if($key===''){
             die('key required !');
         }
-        self::$key = "77978e28102a6a5304e26275ef5c5468";
-        self::$tableid = "5b2c683aafdf522fe23a9312";
-        /*self::$key = $key;
-        self::$tableid = $tableid;*/
+        self::$key = $key;
+        self::$tableid = $tableid;
     }
 
     /**

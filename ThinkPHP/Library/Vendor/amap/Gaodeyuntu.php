@@ -7,8 +7,8 @@ namespace amap;
 
 class Gaodeyuntu
 {
-    private static $key;
-    private static $tableid;
+    private static $key= "77978e28102a6a5304e26275ef5c5468";
+    private static $tableid = "5b2c683aafdf522fe23a9312";
 
     public function __construct($key='', $tableid='') {
         if($key===''){

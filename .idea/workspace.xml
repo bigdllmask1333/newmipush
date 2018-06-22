@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf1c6dc7-c1ff-4fea-9ddc-f72b7306a4c8" name="Default" comment="" />
+    <list default="true" id="cf1c6dc7-c1ff-4fea-9ddc-f72b7306a4c8" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Home/Controller/GaoController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Home/Controller/GaoController.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/18_06_22.log" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/18_06_22.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/amap/Gaodeyuntu.php" beforeDir="false" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/amap/Gaodeyuntu.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,25 +42,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gaodeyuntu.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Gaodeyuntu.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Vendor/amap/Gaodeyuntu.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+            <state relative-caret-position="462">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="e#6#51#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IndexController.class.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="IndexController.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="258" lean-forward="true" selection-start-line="258" selection-end-line="258" />
+            <state relative-caret-position="500">
+              <caret line="278" column="20" lean-forward="true" selection-start-line="278" selection-start-column="20" selection-end-line="278" selection-end-column="20" />
               <folding>
                 <element signature="e#103#853#0#PHP" />
                 <element signature="e#859#904#0#PHP" />
-                <element signature="e#927#1453#0#PHP" />
-                <element signature="e#1467#1737#0#PHP" />
                 <element signature="e#1744#1762#0#PHP" />
                 <element signature="e#1757#2577#0#PHP" />
                 <element signature="e#2676#2754#0#PHP" />
@@ -68,15 +76,6 @@
                 <element signature="e#1458#1593#0#PHP" />
                 <element signature="e#6686#7591#0#PHP" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GaoController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/GaoController.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -122,6 +121,9 @@
       <dir>F:\wamp64\www\mipush</dir>
     </dirStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -133,10 +135,10 @@
         <option value="$PROJECT_DIR$/ThinkPHP/Library/Vendor/sdk/xmpush/Builder.php" />
         <option value="$PROJECT_DIR$/ThinkPHP/Library/Vendor/sdk/xmpush/Stats.php" />
         <option value="$USER_HOME$/Desktop/高德云图 云存储 云检索 数据接口/Gaodeyuntu.php" />
-        <option value="$PROJECT_DIR$/Application/Home/Controller/GaoController.class.php" />
         <option value="$PROJECT_DIR$/ThinkPHP/Library/Vendor/amap/cloudchart/Gaodeyuntu.php" />
-        <option value="$PROJECT_DIR$/ThinkPHP/Library/Vendor/amap/Gaodeyuntu.php" />
+        <option value="$PROJECT_DIR$/Application/Home/Controller/GaoController.class.php" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" />
+        <option value="$PROJECT_DIR$/ThinkPHP/Library/Vendor/amap/Gaodeyuntu.php" />
       </list>
     </option>
   </component>
@@ -158,6 +160,7 @@
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -271,12 +274,12 @@
       <workItem from="1529379149025" duration="1760000" />
       <workItem from="1529458242530" duration="3372000" />
       <workItem from="1529546822360" duration="4338000" />
-      <workItem from="1529635582291" duration="16545000" />
+      <workItem from="1529635582291" duration="17922000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38368000" />
+    <option name="totallyTimeSpent" value="39745000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -288,7 +291,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
@@ -555,13 +558,6 @@
     <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Vendor/sdk/xmpush/Feedback.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Vendor/sdk/xmpush/Stats.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Vendor/sdk/xmpush/Constants.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3234">
@@ -583,13 +579,6 @@
           <folding>
             <element signature="e#6#97#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/GaoController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -620,22 +609,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Vendor/amap/Gaodeyuntu.php">
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/GaoController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        <state relative-caret-position="231">
+          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="16" />
+          <folding>
+            <element signature="e#6#51#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Vendor/sdk/xmpush/Stats.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="258" lean-forward="true" selection-start-line="258" selection-end-line="258" />
+        <state relative-caret-position="500">
+          <caret line="278" column="20" lean-forward="true" selection-start-line="278" selection-start-column="20" selection-end-line="278" selection-end-column="20" />
           <folding>
             <element signature="e#103#853#0#PHP" />
             <element signature="e#859#904#0#PHP" />
-            <element signature="e#927#1453#0#PHP" />
-            <element signature="e#1467#1737#0#PHP" />
             <element signature="e#1744#1762#0#PHP" />
             <element signature="e#1757#2577#0#PHP" />
             <element signature="e#2676#2754#0#PHP" />
@@ -649,6 +646,16 @@
             <element signature="e#6074#6522#0#PHP" />
             <element signature="e#1458#1593#0#PHP" />
             <element signature="e#6686#7591#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Vendor/amap/Gaodeyuntu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#6#51#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
