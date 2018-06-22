@@ -11,11 +11,11 @@ class Gaodeyuntu
     private static $tableid = "5b2c683aafdf522fe23a9312";
 
     public function __construct($key='', $tableid='') {
-        if($key===''){
-            die('key required !');
-        }
-        self::$key = $key;
-        self::$tableid = $tableid;
+//        if($key===''){
+//            die('key required !');
+//        }
+        self::$key = "77978e28102a6a5304e26275ef5c5468";
+        self::$tableid = "5b2c683aafdf522fe23a9312";
     }
 
     public function ccssa(){
@@ -41,6 +41,8 @@ class Gaodeyuntu
             'name' => $name,
             'sig' => $sig
         );
+
+//        return self::$key;
 
         $res = $this->https_request($url, $data);
 
