@@ -272,14 +272,4 @@ http://localhost/mipush/home/index/jianbiao
     }*/
 
 
-    public function wuinsert(){
-        header("Content-type:text/html;charset=utf-8");
-        Vendor('amap.Gaodeyuntu');
-        $push = new \amap\Gaodeyuntu();
-        $str="key=77978e28102a6a5304e26275ef5c5468&name=laosctc49d81aa2cdfc78e5e421961b7b0e50f";
-        $sin=md5($str);
-        $name="laosct";
-        $cc=$push->create_table($name,$sin);
-        var_dump($cc);
-    }
 }

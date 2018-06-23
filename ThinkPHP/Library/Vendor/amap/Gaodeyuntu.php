@@ -63,28 +63,16 @@ class Gaodeyuntu
      * http://yuntuapi.amap.com/datamanage/data/create
      * 返回值 status info _id
      */
-    public function deal_single_data($loctype=1, $_location='', $_address='', $_name='', $coordtype='3', $sig='', $diy=array(), $isUpdate=false)
+    public function deal_single_data($postArr, $isUpdate=false)
+//    public function deal_single_data($loctype=1, $_location='', $_address='', $_name='', $coordtype='3', $sig='', $diy=array(), $isUpdate=false)
     {
         $url = 'http://yuntuapi.amap.com/datamanage/data/create';
         if($isUpdate){
             $url = 'http://yuntuapi.amap.com/datamanage/data/update';
         }
         //基础信息 仅处理经纬度方式
-        $info = array(
-            '_name' => $_name,
-            '_location' => $_location,
-            'coordtype' => $coordtype,
-            '_address' => $_address,
-        );
-        $info = json_encode(array_merge($info, $diy));
-        $data = array(
-            'key' => self::$key,
-            'tableid' => self::$tableid,
-            'loctype' => $loctype,
-            'data' => $info
-        );
 
-        $res = https_request($url, $data);
+        $res =$this -> https_request($url, $postArr);
 
         return $res;
     }
@@ -105,20 +93,12 @@ class Gaodeyuntu
      *
      * 返回值 status info success fail成功/失败条数
      */
-    public function delete_data($ids='', $sig='')
+    public function delete_data($data)
     {
         $url = "http://yuntuapi.amap.com/datamanage/data/delete";
 
-        $data = array(
-            'key' => self::$key,
-            'tableid' => self::$tableid,
-            'ids' => $ids,
-            'sig' => $sig
-        );
-
         $res = $this->https_request($url, $data);
-        $res = json_decode($res);
-
+//        $res = json_decode($res,true);
         return $res;
     }
 
@@ -210,15 +190,9 @@ class Gaodeyuntu
      *
      * @return     <type>  ( description_of_the_return_value )
      */
-    public function search_id($_id='', $sig='')
+    public function search_id($data)
     {
         $url = 'http://yuntuapi.amap.com/datasearch/id';
-        $data = array(
-            'key' => self::$key,
-            'tableid' => self::$tableid,
-            '_id' => $_id,
-            'sig' => $sig
-        );
 
         $res = $this->https_request($url, $data, true);
 
