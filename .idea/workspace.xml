@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf1c6dc7-c1ff-4fea-9ddc-f72b7306a4c8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/18_06_22.log" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/18_06_22.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Home/Controller/GaoController.class.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/amap/Gaodeyuntu.php" beforeDir="false" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/amap/Gaodeyuntu.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,22 +18,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Builder.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Vendor/sdk/xmpush/Builder.php">
+      <file leaf-file-name="IndexController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="push.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Vendor/sdk/push.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="706">
-              <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+            <state relative-caret-position="615">
+              <caret line="282" column="22" lean-forward="true" selection-start-line="282" selection-start-column="22" selection-end-line="282" selection-end-column="22" />
               <folding>
-                <element signature="e#21#40#0#PHP" expanded="true" />
+                <element signature="e#103#853#0#PHP" />
+                <element signature="e#859#904#0#PHP" />
               </folding>
             </state>
           </provider>
@@ -42,64 +34,11 @@
       <file leaf-file-name="Gaodeyuntu.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Vendor/amap/Gaodeyuntu.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="495">
+              <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
               <folding>
                 <element signature="e#6#51#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IndexController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="278" column="94" selection-start-line="278" selection-start-column="56" selection-end-line="278" selection-end-column="94" />
-              <folding>
-                <element signature="e#103#853#0#PHP" />
-                <element signature="e#859#904#0#PHP" />
-                <element signature="e#1744#1762#0#PHP" />
-                <element signature="e#1757#2577#0#PHP" />
-                <element signature="e#2676#2754#0#PHP" />
-                <element signature="e#2699#2714#0#PHP" />
-                <element signature="e#3079#3113#0#PHP" />
-                <element signature="e#2820#2842#0#PHP" />
-                <element signature="e#2906#2947#0#PHP" />
-                <element signature="e#3965#4006#0#PHP" />
-                <element signature="e#5071#5473#0#PHP" />
-                <element signature="e#6063#6294#0#PHP" />
-                <element signature="e#6074#6522#0#PHP" />
-                <element signature="e#1458#1593#0#PHP" />
-                <element signature="e#6686#7591#0#PHP" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Stats.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Vendor/sdk/xmpush/Stats.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Constants.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Vendor/sdk/xmpush/Constants.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3234">
-              <caret line="104" selection-start-line="104" selection-end-line="104" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Message.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Vendor/sdk/xmpush/Message.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -151,7 +90,7 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="52" />
     <option name="y" value="118" />
     <option name="width" value="1400" />
@@ -163,81 +102,67 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="mipush" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mipush" type="462c0819:PsiDirectoryNode" />
+              <item name="newmipush" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newmipush" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="mipush" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mipush" type="462c0819:PsiDirectoryNode" />
+              <item name="newmipush" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newmipush" type="462c0819:PsiDirectoryNode" />
               <item name="Application" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="mipush" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mipush" type="462c0819:PsiDirectoryNode" />
+              <item name="newmipush" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newmipush" type="462c0819:PsiDirectoryNode" />
               <item name="Application" type="462c0819:PsiDirectoryNode" />
               <item name="Home" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="mipush" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mipush" type="462c0819:PsiDirectoryNode" />
+              <item name="newmipush" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newmipush" type="462c0819:PsiDirectoryNode" />
               <item name="Application" type="462c0819:PsiDirectoryNode" />
               <item name="Home" type="462c0819:PsiDirectoryNode" />
               <item name="Controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="mipush" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mipush" type="462c0819:PsiDirectoryNode" />
+              <item name="newmipush" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newmipush" type="462c0819:PsiDirectoryNode" />
               <item name="ThinkPHP" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="mipush" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mipush" type="462c0819:PsiDirectoryNode" />
-              <item name="ThinkPHP" type="462c0819:PsiDirectoryNode" />
-              <item name="Conf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mipush" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mipush" type="462c0819:PsiDirectoryNode" />
+              <item name="newmipush" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newmipush" type="462c0819:PsiDirectoryNode" />
               <item name="ThinkPHP" type="462c0819:PsiDirectoryNode" />
               <item name="Library" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="mipush" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mipush" type="462c0819:PsiDirectoryNode" />
+              <item name="newmipush" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newmipush" type="462c0819:PsiDirectoryNode" />
               <item name="ThinkPHP" type="462c0819:PsiDirectoryNode" />
               <item name="Library" type="462c0819:PsiDirectoryNode" />
               <item name="Vendor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="mipush" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mipush" type="462c0819:PsiDirectoryNode" />
+              <item name="newmipush" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newmipush" type="462c0819:PsiDirectoryNode" />
               <item name="ThinkPHP" type="462c0819:PsiDirectoryNode" />
               <item name="Library" type="462c0819:PsiDirectoryNode" />
               <item name="Vendor" type="462c0819:PsiDirectoryNode" />
               <item name="amap" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="mipush" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mipush" type="462c0819:PsiDirectoryNode" />
-              <item name="ThinkPHP" type="462c0819:PsiDirectoryNode" />
-              <item name="Library" type="462c0819:PsiDirectoryNode" />
-              <item name="Vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="sdk" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../o.16820" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -272,11 +197,12 @@
       <workItem from="1529458242530" duration="3372000" />
       <workItem from="1529546822360" duration="4338000" />
       <workItem from="1529635582291" duration="18247000" />
+      <workItem from="1529719596472" duration="179000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40070000" />
+    <option name="totallyTimeSpent" value="40249000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -288,12 +214,12 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -573,45 +499,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="e#6#97#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Vendor/sdk/xmpush/Builder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Vendor/amap/cloudchart/Gaodeyuntu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="25" />
-          <folding>
-            <element signature="e#6#51#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Vendor/amap/cloudchart/Gaodeyuntu.php" />
     <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Vendor/sdk/push.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="706">
+        <state relative-caret-position="396">
           <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
           <folding>
             <element signature="e#21#40#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/GaoController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="16" />
-          <folding>
-            <element signature="e#6#51#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -623,34 +520,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/GaoController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#6#51#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Vendor/sdk/xmpush/Builder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="278" column="94" selection-start-line="278" selection-start-column="56" selection-end-line="278" selection-end-column="94" />
+        <state relative-caret-position="615">
+          <caret line="282" column="22" lean-forward="true" selection-start-line="282" selection-start-column="22" selection-end-line="282" selection-end-column="22" />
           <folding>
             <element signature="e#103#853#0#PHP" />
             <element signature="e#859#904#0#PHP" />
-            <element signature="e#1744#1762#0#PHP" />
-            <element signature="e#1757#2577#0#PHP" />
-            <element signature="e#2676#2754#0#PHP" />
-            <element signature="e#2699#2714#0#PHP" />
-            <element signature="e#3079#3113#0#PHP" />
-            <element signature="e#2820#2842#0#PHP" />
-            <element signature="e#2906#2947#0#PHP" />
-            <element signature="e#3965#4006#0#PHP" />
-            <element signature="e#5071#5473#0#PHP" />
-            <element signature="e#6063#6294#0#PHP" />
-            <element signature="e#6074#6522#0#PHP" />
-            <element signature="e#1458#1593#0#PHP" />
-            <element signature="e#6686#7591#0#PHP" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Vendor/amap/Gaodeyuntu.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="495">
+          <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
           <folding>
             <element signature="e#6#51#0#PHP" expanded="true" />
           </folding>
