@@ -199,6 +199,7 @@ class Gaodeyuntu
         return $res;
     }
 
+
     /**
      * 云检索 按条件检索数据（可遍历整表数据）
      *
@@ -208,18 +209,9 @@ class Gaodeyuntu
      * @param      string  $page     当前页
      * @param      string  $sig      数字签名
      */
-    public function search_by_condition($filter='', $sortrule='', $limit=10, $page=1, $sig='')
+    public function search_by_condition($data)
     {
         $url = 'http://yuntuapi.amap.com/datamanage/data/list';
-        $data =array(
-            'key' => self::$key,
-            'tableid' => self::$tableid,
-            'filter' => $filter,
-            'sortrule' => $sortrule,
-            'limit' => $limit,
-            'page' => $page,
-            'sig' => $sig
-        );
 
         $res = $this->https_request($url, $data, true);
 
@@ -273,6 +265,9 @@ class Gaodeyuntu
     }
 
 
+
+
+
     /**
      * curl
      *
@@ -297,6 +292,8 @@ class Gaodeyuntu
                 $url .= $data;
             }
         }
+
+        var_dump($url);
 
         $curl = curl_init();
         curl_setopt($curl, CURLOPT_URL, $url);

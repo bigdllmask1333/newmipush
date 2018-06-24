@@ -36,10 +36,10 @@ class AmapController extends Controller {
         $push = new \amap\Gaodeyuntu();
 
         $data1=array();
-        $data1['_name']='大神带带我';
-        $data1['_address']='合肥市第一人民医院西区';
-        $data1['test1']='测试2';
-        $data1['test2']='测试3';
+        $data1['_name']='我是来学习的???';
+        $data1['_address']='安庆师范学院';
+        $data1['test1']='wudi1';
+        $data1['test2']='18712377079';
         $data=json_encode($data1);
 
         $str="data=".$data."&key=".$key."&loctype=2&tableid=".$tableid.$secrtekey;
@@ -52,7 +52,7 @@ class AmapController extends Controller {
         );
 
         $cc=$push->deal_single_data($postArr);
-        var_dump($cc);
+        var_dump(json_decode($cc,true));
         var_dump($str);
     }
 
@@ -67,8 +67,8 @@ class AmapController extends Controller {
 
         $data1=array();
         $data1['_id']='1';
-        $data1['_name']='大神带带我2';
-        $data1['_address']='合肥市第一人民医院西区2';
+        $data1['_name']='大神带带我3';
+        $data1['_address']='合肥市第一人民医院西区';
         $data1['test1']='测试21';
         $data1['test2']='测试31';
         $data=json_encode($data1);
@@ -131,9 +131,85 @@ class AmapController extends Controller {
         );
 
         $cc=$push->search_id($postArr);
-        var_dump($cc);
+        var_dump(json_decode($cc,true));
+    }
 
+    /*
+     * 按照关键词检索数据
+     *  目的：APP端发送周边的APP的别名给服务端
+     * 服务端通过别名作为关键词去云图查找对应的整条并对
+     */
+    public function searchAllBykey(){
+        $key=self::key;
+        $tableid=self::tableid;
+        $secrtekey=self::secrtekey;
+        $filter="_name:大神带带我3";
+//        $filter="_name:大神带带我3+_address:合肥市第一人民医院西区";
+        $limit=1;
+        $page=1;
+        $sortrule=0;
 
+        Vendor('amap.Gaodeyuntu');
+        $push = new \amap\Gaodeyuntu();
+
+//        $str="filter=".$filter."key=".$key."limit=".$limit."page=".$page."&sortrule=".$sortrule."&tableid=".$tableid.$secrtekey;
+//        $str="filter=".$filter."key=".$key."&tableid=".$tableid.$secrtekey;
+        $str="key=".$key."&sortrule=".$sortrule."&tableid=".$tableid.$secrtekey;
+
+        $data =array(
+            'key' => $key,
+            'tableid' => $tableid,
+            'sortrule' => $sortrule,
+            'sig' =>md5($str)
+        );
+
+//        $data =array(
+//            'filter' => $filter,
+//            'key' => $key,
+//            'tableid' => $tableid,
+//            'sig' =>md5($str)
+//        );
+
+       /* $data =array(
+            'filter' => $filter,
+            'key' => $key,
+            'limit' => $limit,
+            'page' => $page,
+            'sortrule' => $sortrule,
+            'tableid' => $tableid,
+            'sig' =>md5($str)
+        );*/
+        $cc=$push->search_by_condition($data);
+        var_dump(json_decode($cc,true));
+    }
+
+    /*上面是查询所有的数据，下面是按照条件查询*/
+
+    public function searchBykey(){
+        $key=self::key;
+        $tableid=self::tableid;
+        $secrtekey=self::secrtekey;
+        $filter="test2:18712377079";
+//        $filter="test2:18712377078+_address:合肥市第一人民医院西区";
+        $limit=1;
+        $page=1;
+        $sortrule=0;
+
+        Vendor('amap.Gaodeyuntu');
+        $push = new \amap\Gaodeyuntu();
+
+        $str="filter=".$filter."&key=".$key."&limit=".$limit."&page=".$page."&sortrule=".$sortrule."&tableid=".$tableid.$secrtekey;
+         $data =array(
+             'filter' => $filter,
+             'key' => $key,
+             'limit' => $limit,
+             'page' => $page,
+             'sortrule' => $sortrule,
+             'tableid' => $tableid,
+             'sig' =>md5($str)
+         );
+        $cc=$push->search_by_condition($data);
+        var_dump(json_decode($cc,true));
     }
 
 
