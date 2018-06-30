@@ -18,7 +18,7 @@ class Stats extends HttpBase {
         $this->bundle = Constants::$bundle_id;
     }
 
-    public function getStats($startDate, $endDate, $type = 'android', $retries = 1) {
+    public function getStats($startDate, $endDate, $type = 'androidpush', $retries = 1) {
         if ($type == 'ios') {
             $fields = array(
                 'start_date' => $startDate,

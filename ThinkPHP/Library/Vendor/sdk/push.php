@@ -1,17 +1,12 @@
 <?php
 namespace sdk;
 use xmpush\Builder;
-
 use xmpush\Sender;
 use xmpush\Constants;
-
 use xmpush\TargetedMessage;
-
 use xmpush\IOSBuilder;
-
 use xmpush\Stats;
 use xmpush\Tracer;
-
 include_once(dirname(__FILE__) . '/autoload.php');
 
 class push
@@ -28,10 +23,12 @@ class push
     public function pushs($style,$aliasList,$titlse,$conent,$payload="")
     {
         $id = (int)$style;
-        $desc = $conent;
+        $desc = "nihao";   /*描述不合法*/
+//        $desc = $conent;   /*描述不合法*/
         if($id == 1){
-            $secret = 'jX0Qc5u9SqPwgsFJrrPoSA==';
+            $secret = '8q6P7dr0mWkmHsSDez1aTg==';
             $package = 'com.yikuaiqian.shiye';
+//            $packages = array('com.yikuaiqian.shiye','com.example.admin.xmplugin');
             Constants::setPackage($package);
             Constants::setSecret($secret);
             $title = $titlse;
@@ -43,6 +40,12 @@ class push
             $message->payload($payload); // 对于预定义点击行为，payload会通过点击进入的界面的intent中的extra字段获取，而不会调用到onReceiveMessage方法。
             $message->extra(Builder::notifyEffect, 1); // 此处设置预定义点击行为，1为打开app
             $message->extra(Builder::notifyForeground, 1);
+            $message->notifyType(1);  	//设置通知类型，type的值可以是DEFAULT_ALL或者以下其他几种的OR组合：
+//            $message->restrictedPackageNames($packages);
+            //DEFAULT_ALL = -1;
+            //DEFAULT_SOUND  = 1;   // 使用默认提示音提示
+            //DEFAULT_VIBRATE = 2;   // 使用默认震动提示
+            //DEFAULT_LIGHTS = 4;    // 使用默认led灯光提示
             $message->notifyId(0);
             $message->build();
             $targetMessage2 = new TargetedMessage();
@@ -50,8 +53,8 @@ class push
             $targetMessage2->setMessage($message);
             $targetMessageList = array( $targetMessage2);
         }else if($id == 2){
-            $secret = '填写参数';
-            $bundleId = '填写参数';
+            $secret = 'UOV5CfPdJNblE6Xa5mc79Q==';
+            $bundleId = 'com.AnhuiIndustry.Emoney';
             Constants::setBundleId($bundleId);
             Constants::setSecret($secret);
             $message = new IOSBuilder();
@@ -83,11 +86,12 @@ class push
             $targetMessage2->setMessage($message);
             $targetMessageList = array( $targetMessage2);
         }
-        print_r($sender->sendToAliases($message,$aliasList)->getRaw());
+//        print_r($sender->sendToAliases($message,$aliasList)->getRaw());
+            print_r($sender->broadcastAll($message)->getRaw());  /*向所有设备推送*/
     }
-    public function dd(){
-        echo 12333;
-    }
+//    public function dd(){
+//        echo 12333;
+//    }
 }
 
 ?>

@@ -11,17 +11,9 @@ class Gaodeyuntu
     private static $tableid;
 
     public function __construct($key='', $tableid='') {
-//        if($key===''){
-//            die('key required !');
-//        }
         self::$key = "77978e28102a6a5304e26275ef5c5468";
         self::$tableid = "5b2c683aafdf522fe23a9312";
     }
-
-    public function ccssa(){
-        echo 123;
-    }
-
     /**
      * 创建云图数据表
      *
@@ -41,9 +33,6 @@ class Gaodeyuntu
             'name' => $name,
             'sig' => $sig
         );
-
-//        return self::$key;
-
         $res = $this->https_request($url, $data);
 
         return $res;
@@ -153,22 +142,11 @@ class Gaodeyuntu
      * @param      string  $page     当前页
      * @param      string  $sig      数字签名
      */
-    public function search_around($keywords=' ', $center='119.168162,36.713983', $radius='3000', $filter='', $sortrule='', $limit=10, $page=1, $sig='')
+    public function search_around($data)
     {
-        $url = 'http://yuntuapi.amap.com/datasearch/around';
-        $data = array(
-            'key' => self::$key,
-            'tableid' => self::$tableid,
-            'keywords' => $keywords,
-            'center' => $center,
-            'radius' => $radius,
-            'filter' => $filter,
-            'sortrule' => $sortrule,
-            'limit' => $limit,
-            'page' => $page,
-            'sig' => $sig
-        );
-
+//        $url = 'http://yuntuapi.amap.com/datasearch/around';
+        $url = 'http://yuntuapi.amap.com/nearby/around';
+                
         $res = $this->https_request($url, $data, true);
 
         return $res;
@@ -293,7 +271,7 @@ class Gaodeyuntu
             }
         }
 
-        var_dump($url);
+//        var_dump($url);
 
         $curl = curl_init();
         curl_setopt($curl, CURLOPT_URL, $url);

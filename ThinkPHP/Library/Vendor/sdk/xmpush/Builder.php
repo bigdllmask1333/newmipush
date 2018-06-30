@@ -1,6 +1,6 @@
 <?php
 /**
- * （android）消息体.
+ * （androidpush）消息体.
  * @author wangkuiwei
  * @name Builder
  * @desc 构建发送给Android设备的Message对象。

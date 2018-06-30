@@ -110,7 +110,7 @@ class BCS_MimeTypes {
 			'xwd' => 'image/x-xwindowdump', 'xyz' => 'chemical/x-xyz',
 			'zip' => 'application/zip',
 			//add by zhengkan 20110905
-			"apk" => "application/vnd.android.package-archive",
+			"apk" => "application/vnd.androidpush.package-archive",
 			"bin" => "application/octet-stream",
 			"cab" => "application/vnd.ms-cab-compressed",
 			"gb" => "application/chinese-gb",

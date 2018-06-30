@@ -63,6 +63,7 @@ class Sender extends HttpBase {
         return $this->postResult(PushRequestPath::V3_ALIAS_MESSAGE(), $fields, $retries);
     }
 
+
     //指定别名列表群发
     public function sendToAliases(Message $message, $aliasList, $retries = 1) {
         $fields = $message->getFields();

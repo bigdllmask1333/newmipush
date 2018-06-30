@@ -4,19 +4,23 @@ use Think\Controller;
 
 
 class AmapController extends Controller {
-    const key  ='77978e28102a6a5304e26275ef5c5468';            //应用key
-    const tableid  ='5b2dbdc12376c12776eccd41';                //表ID
+    const key  ='36f7b1bd5577ea0e4e42910f3db97b26';            //应用key
+//    const key  ='77978e28102a6a5304e26275ef5c5468';            //应用key
+    const tableid  ='5b333ca6305a2a66886a2edc';                //表ID
+//    const tableid  ='5b2dbdc12376c12776eccd41';                //表ID
     const secrtekey  ='c49d81aa2cdfc78e5e421961b7b0e50f';     //私钥
 //$dd=self::key;
     public function __construct($key='', $tableid='') {
         header("Content-type:text/html;charset=utf-8");
     }
 
+    /*http://localhost/newmipush/home/Amap/creater_data*/
+
     /*创建表*/
     public function create_table(){
         $key=self::key;
         $secrtekey=self::secrtekey;
-        $name="meiren";
+        $name="meiren1";
         Vendor('amap.Gaodeyuntu');
         $push = new \amap\Gaodeyuntu();
         $str="key=".$key."&name=".$name.$secrtekey;   /*签名参数*/
@@ -31,7 +35,7 @@ class AmapController extends Controller {
     public function creater_data(){
         $key=self::key;
         $tableid=self::tableid;
-        $secrtekey=self::secrtekey;
+//        $secrtekey=self::secrtekey;
         Vendor('amap.Gaodeyuntu');
         $push = new \amap\Gaodeyuntu();
 
@@ -42,18 +46,18 @@ class AmapController extends Controller {
         $data1['test2']='18712377079';
         $data=json_encode($data1);
 
-        $str="data=".$data."&key=".$key."&loctype=2&tableid=".$tableid.$secrtekey;
+//        $str="data=".$data."&key=".$key."&loctype=2&tableid=".$tableid.$secrtekey;
         $postArr = array (
             'data' =>  $data,
             'key'  =>  $key,
             'loctype' =>  "2",
             'tableid' =>  $tableid,
-            'sig'  =>  md5($str)
+//            'sig'  =>  md5($str)
         );
 
         $cc=$push->deal_single_data($postArr);
         var_dump(json_decode($cc,true));
-        var_dump($str);
+//        var_dump($str);
     }
 
     /*更新数据
@@ -209,6 +213,28 @@ class AmapController extends Controller {
              'sig' =>md5($str)
          );
         $cc=$push->search_by_condition($data);
+        var_dump(json_decode($cc,true));
+    }
+
+
+    /*查询当前设备周边指定半径的设备*/
+    public function searcharound(){
+        $center="116.997858,30.609127";   //这块需要加入接口，供调用！
+        $key=self::key;
+//        $tableid=self::tableid;
+        $limit=2;
+        $filter=200;
+        Vendor('amap.Gaodeyuntu');
+        $push = new \amap\Gaodeyuntu();
+        $data = array(
+            'key' => $key,
+//            'tableid' => $tableid,
+            'center' => $center,
+            'searchtype' => 0,    /*0：直线距离（默认），1：驾车行驶距离*/
+            'radius' => $filter,   /*取值范围(1,10000]，单位：米，超出取值范围按照10公里返回*/
+            'limit' => $limit,    /*取值范围 (1,100]*/
+        );
+        $cc=$push->search_around($data);
         var_dump(json_decode($cc,true));
     }
 
