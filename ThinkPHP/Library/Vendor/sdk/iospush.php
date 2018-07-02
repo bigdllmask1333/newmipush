@@ -12,7 +12,7 @@ include_once(dirname(__FILE__) . '/autoload.php');
 class iospush
 {
     public function index(){
-        Constants::useOfficial();   //在正式环境下使用push服务， useSandbox在测试环境中使用push服务不会影响线上用户
+        Constants::useSandbox();   //在正式环境下使用push服务， useSandbox在测试环境中使用push服务不会影响线上用户
 
         $secret = 'UOV5CfPdJNblE6Xa5mc79Q==';
         $bundleId = 'com.AnhuiIndustry.Emoney';
@@ -20,10 +20,8 @@ class iospush
         Constants::setBundleId($bundleId);
         Constants::setSecret($secret);
 
-//        $aliasList = array('111','a2','a3','a4','a5','a6');
-        $aliasList = array('111');
-        $desc = '这是一条mipush推送消息';
-        $payload = '{"test":1,"ok":"It\'s a string"}';
+        $desc = '自定义字段是这样的$payload = \'{"newdata":"ansdiansdasd"}\';';
+        $payload = '{"newdata":"ansdiansdasd"}';
 
         $message = new IOSBuilder();
         $message->description($desc);
