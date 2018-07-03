@@ -2,17 +2,29 @@
 namespace Home\Controller;
 use Think\Controller;
 
+/*
+ * http://localhost/newmipush/home/Amap/create_table
+ * http://localhost/newmipush/home/Amap/creater_data
+ * http://localhost/newmipush/home/Amap/update_data
+ * http://localhost/newmipush/home/Amap/del_data
+ * http://localhost/newmipush/home/Amap/serId
+ * http://localhost/newmipush/home/Amap/searchAllBykey
+ * http://localhost/newmipush/home/Amap/searcharound
+ * 注意事项：  区分一下签名跟 不需要签名的地方，别的不需要操心！  在TP5里面也只是稍作修改就能用!毕竟是面向对象编程
+ *
+ * 高德云图操作类演示*/
 
 class AmapController extends Controller {
-    const key  ='36f7b1bd5577ea0e4e42910f3db97b26';            //应用key
-//    const key  ='77978e28102a6a5304e26275ef5c5468';            //应用key
-    const tableid  ='5b333ca6305a2a66886a2edc';                //表ID
-//    const tableid  ='5b2dbdc12376c12776eccd41';                //表ID
+//    const key  ='36f7b1bd5577ea0e4e42910f3db97b26';            //应用key
+    const key  ='c52f2e43cc7d5875a1b13c607d7640d5';            //应用key
+    const tableid  ='5b3b03a5305a2a66889d7c31';                //表ID
     const secrtekey  ='c49d81aa2cdfc78e5e421961b7b0e50f';     //私钥
 //$dd=self::key;
     public function __construct($key='', $tableid='') {
         header("Content-type:text/html;charset=utf-8");
     }
+
+    /*role_type 角色  deviceid 设备号 userid 用户id*/
 
     /*http://localhost/newmipush/home/Amap/creater_data*/
 
@@ -219,11 +231,13 @@ class AmapController extends Controller {
 
     /*查询当前设备周边指定半径的设备*/
     public function searcharound(){
-        $center="116.997858,30.609127";   //这块需要加入接口，供调用！
+//        $center="116.997858,30.609127";   //这块需要加入接口，供调用！
+//        $center="117.233407,31.813505";   //这块需要加入接口，供调用！
+        $center="117.233452,31.813459";   //这块需要加入接口，供调用！
         $key=self::key;
 //        $tableid=self::tableid;
-        $limit=2;
-        $filter=200;
+        $limit=100;
+        $filter=10000;
         Vendor('amap.Gaodeyuntu');
         $push = new \amap\Gaodeyuntu();
         $data = array(
