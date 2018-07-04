@@ -30,8 +30,9 @@ class IndexController extends Controller {
     /*IOS推送*/
     public function iospush(){
         Vendor('sdk.iospush');
+        $da=array('2');
         $push = new \sdk\iospush();
-        $push->index();
+        $push->index($da);
     }
 
     /*Android推送*/
@@ -39,5 +40,11 @@ class IndexController extends Controller {
         Vendor('sdk.androidpush');
         $push = new \sdk\androidpush();
         $push->index();
+    }
+
+    public function test(){
+        Vendor('sdk.xmpush.TargetedMessage');
+        $push = new \sdk\xmpush\TargetedMessage();
+        
     }
 }

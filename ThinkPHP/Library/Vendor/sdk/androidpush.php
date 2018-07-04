@@ -43,6 +43,7 @@ class androidpush
         $targetMessage = new TargetedMessage();
         $targetMessage->setTarget('alias1', TargetedMessage::TARGET_TYPE_ALIAS); // 设置发送目标。可通过regID,alias和topic三种方式发送
         $targetMessage->setMessage($message1);
-        print_r($sender->sendToAliases($message1, $aliasList)->getRaw());
+//        print_r($sender->sendToAliases($message1, $aliasList)->getRaw());
+        print_r($sender->broadcastAll($message1)->getRaw());  /*向所有设备推送*/
     }
 }

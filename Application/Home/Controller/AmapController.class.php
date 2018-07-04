@@ -231,8 +231,6 @@ class AmapController extends Controller {
 
     /*查询当前设备周边指定半径的设备*/
     public function searcharound(){
-//        $center="116.997858,30.609127";   //这块需要加入接口，供调用！
-//        $center="117.233407,31.813505";   //这块需要加入接口，供调用！
         $center="117.233452,31.813459";   //这块需要加入接口，供调用！
         $key=self::key;
 //        $tableid=self::tableid;
